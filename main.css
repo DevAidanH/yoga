@@ -1,0 +1,67 @@
+body{  
+    background: url("Images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0% 45%;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+.bodyText{
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    text-shadow: 0px 0px 10px #fff;
+    padding-top: 30%;
+    font-weight: 800;
+}
+.menu{
+    position: absolute;
+    right: 2%;    
+    top: 0;
+    width: 30%
+}
+.menu ul li{
+    display: inline-block;
+    padding: 5%;
+    font-size: 1.3rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.menu ul li:hover{
+    text-shadow: 10px 10px 10px #fff;
+    transition: 0.5s;
+}
+.moblieText{
+    display: none;
+}
+@media(max-width: 1025px){
+    body{
+        background: url("Images/MoblieBackground.png");
+        background-size: 140%;
+    }
+    .bodyText{
+        padding-top: 0;
+    }
+    .menu{
+        position: static;
+        width: 100%;
+        padding: 0;
+    }
+    .menu ul {
+        padding: 0;
+    }
+    .moblieText{
+        display: initial;
+        color: #fff;
+        font-size: 5rem;
+        padding: 0;
+        font-family: 'Bowlby One SC', cursive;
+    }
+}
+@media(max-width: 767px){
+    
+
+    .moblieText{
+        font-size: 3.5rem;
+    }
+}
